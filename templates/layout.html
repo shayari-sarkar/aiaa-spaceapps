@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Symphony of Stars</title> <!--whatever the brand name is-->
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <content="width=device-width, inital-scale=1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.google.com/specimen/Inconsolata" rel="stylesheet">
+
+<style>
+
+body {
+  font-family: "Inconsolata", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  background-color: #C6CB94;
+
+;
+}
+
+.parent-container {
+  margin-bottom: 100px;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.container {
+
+  background-color: #F9F1F0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-right: 2rem;
+  max-width: 25ch;
+  text-align: center;
+  padding: 10px;
+  margin-left: 5px;
+  align-items: center;
+  padding: 2.5rem 2.5rem 2.5rem;
+
+}
+
+.header {
+  font-family: "Inconsolata", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #A54B28;
+
+  @media (min-width: 768px) {
+          margin-right: 5px;
+        }
+        
+  h3 {
+  display: flex;
+  margin-right: 3rem;
+  width: 100%;
+  max-width: 25ch;
+  margin-left: 2.5rem;
+  text-align: right;
+}
+
+}
+
+#g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -78px 0 0 0 !important;
+  width: 302px !important;
+  height: 76px !important;
+  z-index: -999999;
+  opacity: 0;
+}
+
+input {
+  width: 80%;
+  padding: 12px 12px;
+  margin: 10px;
+}
+
+button {
+  padding: 12px 12px;
+  margin: 5px;
+
+}
+
+.logo-container {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  padding: 10px;
+  z-index: 300;
+}
+
+.logo-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.content-container {
+  margin-top: 150px; /* Adjust this value based on the logo height + spacing */
+  margin-left: 150px; /* Adjust this value based on the logo width + spacing */
+}
+
+.text-xs-center {
+  text-align: center;
+}
+
+.g-recaptcha {
+  display: inline-block;
+}
+
+
+</style>
+</head>
+
+<body>
+  <!--logo...maybe change the name?-->
+  <div class="logo-container">
+    <img src="{{url_for('static',filename='logo.png')}}" height="112.5px" width="135px">
+  </div>
+
+  <div class="content-container">
+    {% block body %}{% endblock %}
+  </div>
+</body>
