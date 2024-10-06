@@ -1,12 +1,8 @@
 # general flask libraries
 from flask import Flask, render_template, request
 
-# get reCAPTCHA keys
-from config import Config
-
 # create the app
 app = Flask(__name__)
-app.config.from_object(Config)
 
 # login/register
 @app.route('/', methods=['GET', 'POST'])
