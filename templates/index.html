@@ -3,7 +3,7 @@
 {% block body %}
 
 {% block scripts %}
-            
+
 {% endblock %}
 
 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
@@ -19,7 +19,7 @@
 
 <br>
 <br>
-<h2>Travel through the universe...with music!</h2>
+<h2>Travel through the Universe...with music!</h2>
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -31,19 +31,21 @@
 
     <img src="{{url_for('static',filename='jwst.png')}}" style="width:60%" class="center">
     <br>
-    <div class="description"><strong>James Webb Space Telescope</strong></div>
+    <div class="description"><strong>James Webb Space Telescope (JWST)</strong></div>
     <br>
-    <div class="description">As we breathe life into JWST by using music, we believe it will spark curiosity
-      <br> and excitement about space for the general public, transforming their perception from 
-      <br> merely an instrument in space to the culmination of generations of curiosity about
-      <br> our place in the cosmos. JWST represents an agent to discover beyond the 
-      <br> confines of Earth-based observation, which is limited by light pollution that blocks 
-      <br>the few wavelengths that make it past Earth's atmosphere. Not only that, the 
-      <br>atmosphere distorts the light from celestial objects which blurs images and makes 
-      <br>them lower resolution. However, JWST has evolved in its capabilities, as it reaches 
-      <br>further and further back in time to answer the most fundamental questions: where 
-      <br>do we come from, where are we headed, and what is our place and uniqueness in 
-      <br>comparison to the rest of the Universe.
+    <br>
+<!-- REVERT BACK -->
+    <div class="description">As we breathe life into JWST by using music, we believe it will spark
+      <br> curiosity and excitement about space for the general public, transforming their perception of
+      <br>the telescope from merely an instrument in space to, instead, the culmination of generations
+      <br>of curiosity about our place in the cosmos. JWST represents an agent to make discoveries
+      <br>beyond the confines of Earth-based observation, which is limited by light pollution that
+      <br>blocks the few wavelengths that make it past Earth's atmosphere. Not only that, the
+      <br>atmosphere distorts the light from celestial objects, which blurs images and converts
+      <br>them to a lower resolution. However, JWST has evolved in its capabilities, as it reaches
+      <br>further and further back in time to answer the most fundamental questions: Where do we come
+      <br>from? Where are we headed? How are we unique in comparison to the rest of the Universe?
+
     </div>
 
   </div>
@@ -54,11 +56,24 @@
     <br>
     <div class="description"><strong>IC 5332</strong></div>
     <br>
-    <div class="description">The Rayleigh-Jeans Law states that the amount of electromagnetic energy 
-      <br>released from an object can be calculated using the object’s temperature. The 
-      <br>spiral galaxy IC 5332 is able to be captured in unprecedented detail thanks to 
-      <br>James Webb Space Telescope’s Mid-InfraRed Instrument (MIRI), which reveals 
+<!--changed div-->
+    <div style="display: flex; align-items: center; justify-content: center; margin: 40px;">
+    <audio id="audio1" controls class = "space-audio-player">
+        <source src="{{url_for('static',filename='ic-5332.mp3')}}" type="audio/mp3">
+    </audio>
+
+    <img src="{{url_for('static',filename='ic-5332-eq.png')}}" style="width:30%; margin-left: 20px;">
+</div>
+
+
+<!--end of change AND REVERT BACK-->
+    <div class="description">The Rayleigh-Jeans Law states that the amount of electromagnetic energy
+      <br>released from an object can be calculated using the object’s temperature. The
+      <br>spiral galaxy IC 5332 is able to be captured in unprecedented detail thanks to
+      <br>James Webb Space Telescope’s Mid-InfraRed Instrument (MIRI), which reveals
       <br>that the galaxy’s symmetrical spiral arms emit infrared light at a variety of temperatures.
+       <br>Using JWST's infrared image, each pixel value was converted into a MIDI note and
+       <br>recorded in the C major scale - revealing what IC 5332 "sounds" like.
     </div>
   </div>
 
@@ -68,12 +83,27 @@
     <br>
     <div class="description"><strong>Wolf-Rayet 124</strong></div>
     <br>
-    <div class="description">Einstein’s Mass-Energy Equivalence equation states that the mass of an object 
-      <br>determines how much energy it can produce. This is true for some types of 
-      <br>supernova (explosion of a star), where the energy of the explosion increases with 
+<div style="display: flex; align-items: center; justify-content: center; margin: 40px;">
+    <audio id="audio2" controls class = "space-audio-player">
+        <source src="{{url_for('static',filename='speedOfLight.mp3')}}" type="audio/mp3">
+    </audio>
+    <br>
+    <br>
+
+    <img src="{{url_for('static',filename='wolf-rayet-eq.png')}}" style="width:30%; margin-left: 20px;"></div>
+
+    <br>
+
+    <div class="description">Einstein’s Mass-Energy Equivalence equation states that the mass of an object
+      <br>determines how much energy it can produce. This is true for some types of
+      <br>supernova (explosion of a star), where the energy of the explosion increases with
       <br>the mass of the star. This image displays the structure of WR 124’s nebula, which
-      <br> is made from material given off of aging stars in random ejections. This 
+      <br> is made from material given off of aging stars in random ejections. This
       <br>destruction causes the star to lose mass, and leads to its eventual collapse.
+      <br> This music highlights the stars, energy, and Einstein's equation through
+      <br> the embodiment of the speed of light. The frequencies 380hz and 3800hz
+      <br> are exemplified to show the growth of a star's mass and its
+      <br> eventual collapse.
     </div>
   </div>
 
@@ -83,12 +113,25 @@
     <br>
     <div class="description"><strong>Arp 107</strong></div>
     <br>
-    <div class="description">The Planck-Einstein Relation is a formula integral to quantum mechanics which 
+<div style="display: flex; align-items: center; justify-content: center; margin: 40px;">
+    <audio id="audio3" controls class = "space-audio-player">
+        <source src="{{url_for('static',filename='planck_einstein.mp3')}}" type="audio/mp3">
+    </audio>
+    <br>
+    <br>
+
+    <img src="{{url_for('static',filename='planck_einstein-eq.png')}}" style="width:30%; margin-left: 20px;"></div>
+
+
+    <div class="description">The Planck-Einstein Relation is a formula integral to quantum mechanics which
       <br>relates the energy of a photon (particle of light) to its frequency. In this JWST
       <br>image, near-infrared data, shown in white, represents older stars, while young
       <br> stars and star-forming regions are shown in vibrant orange and red. Information
-      <br>about the star formation taking place in these two galaxies and how they collided 
-      <br>millions of years ago can be collected by this composite image.
+      <br>about the star formation taking place in these two galaxies and how they collided
+      <br>millions of years ago can be collected by this composite image. This equation,
+      <br> along with the charecteristics of infrared light, is the basis of this music -
+      <br> defining the note sequences of it's graph with the low volume representing
+      <br> our inability to see infrared light.
     </div>
   </div>
 
@@ -99,12 +142,24 @@
     <br>
     <div class="description"><strong>IC 1623</strong></div>
     <br>
-    <div class="description">Schrödinger’s Equation can be used to describe the long-term distortion 
-      <br>and evolution of astrophysical disks, which form from gravitational forces when huge 
-      <br>volumes of rock, ice and space debris orbit a massive astronomical object. A black 
-      <br>hole is an example of a massive astronomical object, and this image shows a pair 
-      <br>of interacting galaxies that could eventually form into one. The collision creates a 
+<div style="display: flex; align-items: center; justify-content: center; margin: 40px;">
+    <audio id="audio4" controls class = "space-audio-player">
+        <source src="{{url_for('static',filename='schrodingher.mp3')}}" type="audio/mp3">
+    </audio>
+    <br>
+    <br>
+
+    <img src="{{url_for('static',filename='schro-eq.png')}}" style="width:30%; margin-left: 20px;"></div>
+
+
+    <div class="description">Schrödinger’s Equation can be used to describe the long-term distortion
+      <br>and evolution of astrophysical disks, which form from gravitational forces when huge
+      <br>volumes of rock, ice and space debris orbit a massive astronomical object. A black
+      <br>hole is an example of a massive astronomical object, and this image shows a pair
+      <br>of interacting galaxies that could eventually form into one. The collision creates a
       <br>rapid state of star formation known as a starburst, as featured in this JWST image.
+      <br> Bringing this equation to life, three note progressions that represent galaxies
+      <br> interacting with each other to ultimately create a "starburst."
     </div>
   </div>
 
@@ -115,10 +170,22 @@
     <br>
     <div class="description"><strong>NGC 5468</strong></div>
     <br>
+<div style="display: flex; align-items: center; justify-content: center; margin: 40px;">
+    <audio id="audio5" controls class = "space-audio-player">
+        <source src="{{url_for('static',filename='hubble.mp3')}}" type="audio/mp3">
+    </audio>
+    <br>
+    <br>
+
+    <img src="{{url_for('static',filename='hubble-eq.png')}}" style="width:30%; margin-left: 20px;"></div>
+
+
     <div class="description">Hubble’s Law expresses the rate at which the Universe is expanding. NGC 5468,
-      <br> shown in this image, is the most distant galaxy that has been identified to contain 
-      <br>Cepheid variable stars, which are important markers for measuring the expansion 
-      <br>rate of our Universe. 
+      <br> shown in this image, is the most distant galaxy that has been identified to contain
+      <br>Cepheid variable stars, which are important markers for measuring the expansion
+      <br>rate of our Universe. Imagine this expansion as you listen - with the gradually
+      <br> increasing tempo and pitch defined by Hubble's Law taking you on a journey as
+      <br> the universe expands faster and faster.
     </div>
   </div>
 
@@ -139,7 +206,7 @@
   <span class="dot" onclick="currentSlide(6)"></span>
 </div>
 
-  
+
 <style>
 
 /* for images */
@@ -152,14 +219,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-/* NAV BAR - WILL EDIT BC I JUST PULLD FROM W3SCHOOLS */
+/* NAV BAR */
 
   /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -181,7 +250,7 @@
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #ADD8E6;
   color: white;
 }
 
@@ -218,7 +287,7 @@
 }
 
 
-/* SLIDESHOW - WILL EDIT BC I JUST PULLD FROM W3SCHOOLS */
+/* SLIDESHOW */
 
 * {box-sizing:border-box}
 
@@ -294,7 +363,7 @@
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #ADD8E6;
 }
 
 /* Fading animation */
@@ -306,6 +375,20 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* Audio */
+
+
+
+.space-audio-player {
+    display: inline-block;
+    padding: 20px;
+    background: linear-gradient(135deg, #00a2ff, #6a0dad, #ffffff);
+
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.2);
+    position: relative;
 }
 
 </style>
@@ -331,7 +414,9 @@ showSlides(slideIndex);
 
 // next slide
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+
+    showSlides(slideIndex += n);
+
 }
 
 // current slide
