@@ -1,4 +1,4 @@
-This project was built with my team members from the High School AIAA Chapter: Atharva, Madelyn, Dev, Nirnay, and Somwya --- thank you for making this project happen!
+This project was built with my teammates from the High School AIAA Chapter: Atharva, Madelyn, Dev, Nirnay, and Somwya --- thank you for making this project possible!
 
 # James Webb Space Telescope (JWST) Educational Experience
 This project is an interactive Flask web-app which teaches students about JWST by showing a dynamic gallery of its pictures with data sonification (music developed from image metadata).
